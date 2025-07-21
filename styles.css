@@ -655,130 +655,55 @@ footer {
   box-shadow: 0 0 12px #FF5C43;
 }
 
-/* 🎯 Typography scaling */
-body {
-  font-size: 16px;
-  line-height: 1.5;
-  word-break: break-word;
-}
-
-/* 🔧 Flexible banner images */
-.vault-banner,
-.tutorial-image,
-.signup-photo {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* 📦 Grid layouts for all devices */
-.grid-links,
-.faq-grid,
-.emulator-grid,
-.console-grid,
-.signup-grid,
-.vault-showcase {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
-/* 🧠 Responsive header + nav */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-
-  .main-nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-    padding: 0;
-  }
-
-  .cta-button {
-    margin-top: 1rem;
-    width: 100%;
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .vault-card img,
-  .signup-photo,
-  .tutorial-image,
-  .trio-image {
-    height: auto;
-    max-width: 100%;
-    object-fit: cover;
-  }
-
-  .trio-box {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-/* 🦶 Footer stack for small screens */
-@media (max-width: 600px) {
-  .footer-nav {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-
-  .social-icons {
-    justify-content: center;
-    margin: 1rem 0;
-  }
-
-  .legal {
-    text-align: center;
-    font-size: 0.85rem;
-  }
-}
 @media (max-width: 768px) {
   .site-header {
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .main-nav {
+    width: 100%;
+    margin-top: 1rem;
   }
 
   .main-nav ul {
     flex-direction: column;
+    align-items: center;
     gap: 0.8rem;
+    margin: 0;
     padding: 0;
-    margin-top: 1rem;
   }
 
   .main-nav li {
-    width: 100%;
+    width: 90%;
   }
 
   .main-nav li a {
     display: block;
+    width: 100%;
+    text-align: center;
     padding: 0.8rem 1rem;
-    background-color: #121212;
+    font-size: 1rem;
+    background-color: #1a1a1a;
     border: 1px solid #26FFFF;
     border-radius: 6px;
     color: #FF00FF;
-    font-weight: bold;
-    text-align: center;
+    transition: all 0.3s ease;
   }
 
   .main-nav li a:hover {
     background-color: #FF00FF;
-    color: #000000;
-    box-shadow: 0 0 10px #FF5C43;
+    color: #000;
+    box-shadow: 0 0 8px #FF5C43;
   }
 
   .cta-button {
     margin-top: 1rem;
-    width: 100%;
+    width: 90%;
+    text-align: center;
+    padding: 0.7rem 1rem;
     font-size: 1rem;
+    border-radius: 6px;
   }
 }
