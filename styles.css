@@ -1,0 +1,657 @@
+body {
+  background-color: #0e0e0e;
+  color: #ffffff;
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181818;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #FF00FF;
+}
+
+.logo {
+  width: 160px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: #FF00FF;
+  padding: 0.5rem 1rem;
+  border: 1px solid #26FFFF;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.main-nav li a:hover {
+  color: #01FF10;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 12px #FF5C43;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 2rem 1rem;
+  background-color: #1a1a1a;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #FF5C43;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #26FFFF;
+}
+
+.site-description {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background-color: #121212;
+  border-left: 4px solid #FF00FF;
+}
+
+.grid-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 1rem;
+}
+
+.grid-links div {
+  background-color: #1a1a1a;
+  border: 2px solid #FF5C43;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #E44DFF;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.grid-links div:hover {
+  background-color: #363636;
+  color: #26FFFF;
+}
+
+.updates {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.updates h2 {
+  color: #FF00FF;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.updates article {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #26FFFF;
+  box-shadow: 0 0 8px #FF5C43;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #E44DFF;
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+/* ✅ Tutorials Page Refinement */
+.faq-section {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.faq-section h1 {
+  font-size: 2.2rem;
+  color: #FF00FF;
+  margin-bottom: 0.5rem;
+}
+
+.faq-description {
+  color: #B0FFFB;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.faq-box {
+  background-color: #1a1a1a;
+  border: 2px solid #FF5C43;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #ffffff;
+  box-shadow: 0 0 10px #FF00FF, inset 0 0 8px #26FFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.faq-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 16px #FF5C43, inset 0 0 12px #01FF10;
+}
+
+.faq-box h3 {
+  font-size: 1.1rem;
+  color: #FF00FF;
+  margin-bottom: 0.5rem;
+}
+
+.faq-box button {
+  margin-top: auto;
+  padding: 0.6rem 1rem;
+  background-color: #FF00FF;
+  border: none;
+  border-radius: 6px;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.faq-box button:hover {
+  background-color: #01FF10;
+}
+
+/* 📬 Sign-Up Page Enhancement */
+.signup-section {
+  padding: 3rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.signup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  align-items: start;
+}
+
+.signup-image {
+  background-color: #2a2a2a;
+  border: 2px dashed #FF00FF;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.signup-form {
+  background-color: #1a1a1a;
+  border: 2px solid #FF5C43;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #FF00FF, inset 0 0 8px #26FFFF;
+}
+
+.signup-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #FF5C43;
+}
+
+.signup-form p {
+  color: #26FFFF;
+  margin-bottom: 2rem;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  background-color: #121212;
+  border: 1px solid #26FFFF;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: #FF00FF;
+  box-shadow: 0 0 10px #FF00FF;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #FF00FF;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 0 8px #01FF10;
+}
+
+.signup-form button:hover {
+  background-color: #26FFFF;
+  box-shadow: 0 0 12px #FF00FF;
+}
+
+.disclaimer {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #999999;
+}
+
+.disclaimer a {
+  color: #26FFFF;
+  text-decoration: underline;
+}
+
+.disclaimer a:hover {
+  color: #FF5C43;
+}
+.tutorial-image {
+  display: block;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #26FFFF;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #FF00FF;
+}
+/* 📸 Signup Image Styling */
+.signup-photo {
+  display: block;
+  max-width: 100%;
+  border: 2px solid #26FFFF;
+  border-radius: 10px;
+  box-shadow: 0 0 16px #FF00FF;
+  margin: 0 auto;
+}
+
+/* 📬 Signup Form Styling */
+.signup-section {
+  padding: 3rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.signup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  align-items: start;
+}
+
+.signup-form {
+  background-color: #1a1a1a;
+  border: 2px solid #FF5C43;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #FF00FF, inset 0 0 8px #26FFFF;
+}
+
+.signup-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #FF5C43;
+}
+
+.signup-form p {
+  color: #26FFFF;
+  margin-bottom: 2rem;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  background-color: #121212;
+  border: 1px solid #26FFFF;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: #FF00FF;
+  box-shadow: 0 0 10px #FF00FF;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #FF00FF;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 0 8px #01FF10;
+}
+
+.signup-form button:hover {
+  background-color: #26FFFF;
+  box-shadow: 0 0 12px #FF00FF;
+  color: #000000;
+}
+
+.disclaimer {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #999999;
+}
+
+.disclaimer a {
+  color: #26FFFF;
+  text-decoration: underline;
+}
+
+.disclaimer a:hover {
+  color: #FF5C43;
+}
+/* 🖼️ Vault Banner — Full Width Stretch */
+.vault-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #FF00FF;
+  border: 2px solid #26FFFF;
+}
+
+/* 📖 Vault Intro */
+.vault-intro {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.vault-intro h1 {
+  font-size: 2.2rem;
+  color: #FF5C43;
+  margin-bottom: 0.5rem;
+}
+
+.vault-intro p {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.vault-intro .tip {
+  margin-top: 1rem;
+  color: #26FFFF;
+  font-size: 0.9rem;
+}
+
+/* 🗂️ Console Grid List */
+.console-list {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.console-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.console-grid a {
+  text-decoration: none;
+  background-color: #1a1a1a;
+  border: 1px solid #26FFFF;
+  color: #FF00FF;
+  padding: 0.6rem 0.8rem;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.console-grid a:hover {
+  background-color: #FF00FF;
+  color: #000000;
+  box-shadow: 0 0 10px #FF5C43;
+}
+
+/* 🧃 Vault Highlight Cards */
+.vault-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.vault-card {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #FF5C43;
+  box-shadow: 0 0 10px #FF00FF, inset 0 0 6px #26FFFF;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.vault-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 16px #FF00FF;
+}
+
+.vault-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 2px solid #26FFFF;
+  box-shadow: 0 0 10px #01FF10;
+}
+
+.vault-card h3 {
+  color: #FF00FF;
+  margin-bottom: 0.5rem;
+}
+
+.vault-card p {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.vault-card a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #01FF10;
+  background-color: #121212;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #26FFFF;
+  display: inline-block;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.vault-card a:hover {
+  background-color: #FF00FF;
+  color: #000000;
+  box-shadow: 0 0 8px #FF5C43;
+}
+
+/* 🎮 Emulation Banner */
+.vault-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #FF00FF;
+  border: 2px solid #26FFFF;
+}
+
+/* 💡 Intro Section */
+.emulation-intro {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.emulation-intro h1 {
+  font-size: 2.2rem;
+  color: #FF5C43;
+  margin-bottom: 0.5rem;
+}
+
+.emulation-intro p {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* 🧩 Emulator Grid */
+.emulator-list {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.emulator-list h2 {
+  color: #FF00FF;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.emulator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.emulator-grid a {
+  text-decoration: none;
+  background-color: #1a1a1a;
+  border: 1px solid #26FFFF;
+  color: #FF00FF;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.emulator-grid a:hover {
+  background-color: #FF00FF;
+  color: #000000;
+  box-shadow: 0 0 10px #FF5C43;
+}
+
+/* 👾 Vault Trio Promo */
+.trio-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background-color: #121212;
+  border: 2px solid #FF5C43;
+  border-radius: 12px;
+  box-shadow: 0 0 16px #FF00FF, inset 0 0 10px #26FFFF;
+}
+
+.trio-image {
+  flex: 1 1 300px;
+  max-width: 350px;
+  border-radius: 10px;
+  border: 2px solid #26FFFF;
+  box-shadow: 0 0 14px #FF00FF;
+}
+
+.trio-content {
+  flex: 1 1 400px;
+  color: #ffffff;
+}
+
+.trio-content h3 {
+  color: #FF00FF;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.trio-content p {
+  margin-bottom: 1rem;
+  color: #26FFFF;
+  line-height: 1.5;
+}
+
+.trio-content a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #FF00FF;
+  color: #000000;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 1px solid #26FFFF;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trio-content a:hover {
+  background-color: #01FF10;
+  color: #000000;
+  box-shadow: 0 0 12px #FF5C43;
+}
+
